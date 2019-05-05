@@ -2,24 +2,24 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
 const POST_ARCHIVE_QUERY = graphql`
-      query BlogPostArchive{
-        allMarkdownRemark(
-          limit:5, sort: {
-          order: DESC,
-          fields:[frontmatter___date]
-        }) {
-          edges {
-            node {
-              frontmatter{
-                title
-                slug
-                # date(formatString: "MMMM DD, YYYY")
-              }
-            }
+  query BlogPostArchive{
+    allMarkdownRemark(
+      limit:5, sort: {
+      order: DESC,
+      fields:[frontmatter___date]
+    }) {
+      edges {
+        node {
+          frontmatter{
+            title
+            slug
+            # date(formatString: "MMMM DD, YYYY")
           }
         }
       }
-    `;
+    }
+  }
+`;
 
 const Archive = () => (
   <StaticQuery
