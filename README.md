@@ -95,3 +95,14 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+# specific parts
+
+- `gatsby-node.js`:\
+it is where pages are programmatically created and modified => https://www.gatsbyjs.org/docs/creating-and-modifying-pages/
+- Static query
+  - Static query can be used everywhere 
+  - Does not accept variable
+  - Can't use context
+- Page query
+  - Must be used on pages
