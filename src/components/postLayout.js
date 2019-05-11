@@ -2,10 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from './layout';
 
-const postLayout = ({ data }) => {
+const postLayout = ({ data, location }) => {
   const { markdownRemark } = data;
+  console.log('location HERE', location);
   return (
-    <Layout>
+    <Layout location={location}>
       <h1>{markdownRemark.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
     </Layout>
