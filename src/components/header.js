@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { FaBlog } from 'react-icons/fa';
 import { Link } from "gatsby";
 import styled from 'styled-components';
-
-import logo from '../images/logo.svg';
 
 const HeaderWrapper = styled.div`
   background: #524763;
@@ -28,13 +27,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          <img
-            style={{
-              width: '100px'
-            }}
-            src={logo}
-            alt="header logo"
-          />
+          <FaBlog width={100}/>
         </Link>
       </h1>
     </HeaderContainer>
