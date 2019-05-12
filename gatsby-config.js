@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Blog`,
     description: `My blog description`,
     author: `@sylvain04`,
+    siteUrl: 'https://competent-davinci-cafba5.netlify.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,6 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
