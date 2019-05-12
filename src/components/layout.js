@@ -16,7 +16,7 @@ const MainLayout = styled.main`
   grid-template-columns: 4fr 1fr;
   grid-gap: 40px;
 `;
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location={} }) => {
   const isHomePage = location.pathname === '/';
   const SpringProps = useSpring({
     from: {height: isHomePage ? 200 : 300},
